@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "crud application with express",
   "main": "server.js",
-  "homepage": "https://bulgantamirl.github.io/weblab6.github.io/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
