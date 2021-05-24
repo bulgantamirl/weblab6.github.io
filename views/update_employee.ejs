@@ -1,0 +1,48 @@
+<!-- include header -->
+<%-include('include/_header') %>
+<!-- /include header -->
+    <!-- Main-->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                 <div class="fiter">
+                     <a href="/"><i class="fas fa-chevron-left"></i> All Employees</a>
+                 </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark"> Update Employee</h2>
+                <span class="text-light">Use the below form to Update an Employee </span>
+            </div>
+            <!-- Update employee form-->
+                <!-- form-->
+                    <form method="POST" id="update_employee">
+                        <div class="new_employee">
+                            <div class="formGroup">
+                                <label for="name" class="text-light">Name</label>
+                                <input type="hidden" name="id" value="<%=employee._id %>">
+                                <input type="text" name="name" value="<%=employee.name %>" placeholder="Ben Dover">
+                            </div>
+                            <div class="formGroup">
+                                <label for="Email" class="text-light">Email</label>
+                                <input type="text" name="email" value="<%=employee.email %>" placeholder="example@example.com">
+                            </div>
+                            <div class="formGroup">
+                                <label for="Number" class="text-light">Phone Number</label>
+                                <input type="text" name="phoneNumber" value="<%=employee.phoneNumber %>" placeholder="99 XXXXXX">
+                            </div>
+                            <div class="formGroup">
+                                <button type="submit" class="btn text-dark update">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                <!-- /form-->
+            <!-- /Update employee form-->
+        </div>
+    </main>
+
+    <!-- /Main-->
+
+
+<!-- include footer -->
+<%-include('include/_footer') %>
+<!-- /include footer -->

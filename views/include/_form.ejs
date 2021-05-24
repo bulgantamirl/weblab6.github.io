@@ -1,0 +1,22 @@
+<!-- form-->
+<form action="/api/employees" method="POST" id="add_employee">
+    <div class="new_employee">
+        <div class="formGroup">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="name" value="" placeholder="Ben Dover">
+        </div>
+        <div class="formGroup">
+            <label for="Email" class="text-light">Email</label>
+            <input type="text" name="email" value="" placeholder="example@example.com">
+        </div>
+        <div class="formGroup">
+            <label for="Number" class="text-light">Phone Number</label>
+            <input type="text" name="phoneNumber" value="" placeholder="99 XXXXXX">
+        </div>
+        <div class="formGroup">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
+<!-- /form-->
